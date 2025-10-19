@@ -1,0 +1,47 @@
+<!-- NAVIGATION -->
+<!-- Mobile Navigation -->
+<nav class="mobile-nav">
+  <!-- Initial Display -->
+  <div id="displayed">
+    <a routerLink="/" class="active"><img src="logo.png" alt="PARA Logo"></a>
+
+    <!-- Hamburger Menu -->
+    <a href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+      <i class="ri-menu-line"></i>
+    </a>
+  </div>
+
+  <!-- Navigation Links -->
+  <div id="mobile-links" [ngClass]="{'show': menuOpen}">
+    <hr>
+    <a routerLink="/"><i class="ri-home-2-fill"></i> Home</a>
+    <hr>
+    <a routerLink="/about"><i class="ri-user-3-fill"></i> About</a>
+    <hr>
+    <a routerLink="/shelters"><i class="ri-pages-line"></i> Shelters</a>
+    <hr>
+    <a routerLink="/contact"><i class="ri-mail-line"></i> Contact</a>
+    <hr>
+  </div>
+</nav>
+
+<!-- Tablet and Desktop Navigation -->
+<nav class="tab-desk-nav">
+  <a routerLink="/" class="active"><img src="logo.png" alt="PARA Logo"></a>
+
+  <div id="tab-desk-links">
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/shelters">Shelters</a>
+    <a routerLink="/contact">Contact</a>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<router-outlet />
+
+<!-- FOOTER -->
+<footer>
+  <a href="https://github.com/WD-302-PARADEVS">Created by the PARA_DEVS</a>
+  <a href="javascript:void(0);" class="back-to-top" (click)="backToTop()">Back to top</a>
+</footer>

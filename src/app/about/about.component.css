@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.header, .values, .advocacy, .team {
+    padding: 30px; 
+    text-align: center;
+}
+
+.header {
+    background-color: #956EA6;
+    border-radius: 8px;
+    color: #FFFFF0;
+}
+
+.advocacy h2{
+    color: #FFFFF0;
+}
+
+.values h2, .team h2 {
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+.values-icons {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.value {
+    text-align: center;
+    margin: 20px;
+}
+
+.value img {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.advocacy {
+    background-color: #956EA6;
+    color: #FFFFF0;
+    padding: 30px 15px;
+    border-radius: 8px;
+}
+
+.advocacy h2 {
+    color: #FFFFF0;
+}
+
+.advocacy-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.advocacy-content p {
+    flex: 1;
+    margin: 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.advocacy-content img {
+    flex: 1;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .advocacy-content {
+        flex-direction: column;
+    }
+
+    .advocacy-content p {
+        margin-bottom: 20px;
+    }
+
+    .advocacy-content img {
+        max-width: 100%;
+    }
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* CTA style rules added by Chester Tayag */
+.mobile-cta a, .cta-text a {
+    border: solid 2px var(--white);
+    border-radius: 20px;
+    padding: 15px;
+    color: var(--white);
+}
+
+/* .mobile-cta, .tab-desk-cta {
+    margin-top: 50px;
+} */
+
+@media (max-width: 767px) {
+    .tab-desk-cta {
+        display: none;
+    }
+
+    .mobile-cta {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: var(--purple);
+        color: var(--white);
+    }
+
+    .mobile-cta h2 {
+        color: var(--black);
+    }
+
+    .mobile-cta div {
+        padding: 15px 0;
+    } 
+}
+
+@media (min-width: 768px) {
+    .mobile-cta {
+        display: none;
+    }
+
+    .tab-desk-cta {
+        position: relative;
+    }
+
+    .tab-desk-cta img {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .cta-text {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        width: 50%;
+        color: var(--white);
+    }
+
+    .cta-text h2 {
+        font-size: 3.5rem;
+        color: var(--black);
+    }
+
+    .cta-text div {
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cta-text {
+        top: 20%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cta-text {
+        top: 25%;
+    }
+    .cta-text h2 {
+        font-size: 4rem;
+    }
+
+    .cta-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .cta-text p, .cta-text a {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,149 @@
+/* IMPORTED FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* COLOR VARIABLES */
+:root {
+    --white: #FFFFF0;
+    --purple: #956EA6;
+    --black: #1E1E1E;
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLE RULES */
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 20px;
+    max-width: 1600px;
+    font-family: "Inter", sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav a img {
+    border-radius: 15px;
+}
+
+main {
+    margin: 30px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    font-weight: 700;
+}
+
+.back-to-top {
+    padding: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+/* MOBILE VIEWPORT STYLE RULES */
+
+@media (max-width: 767px) {
+    /* HIDE TABLET & DESKTOP NAV */
+    .tab-desk-nav {
+        display: none;
+    }
+
+    /* NAV STYLE RULES */
+    #displayed {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Left Side: Logo */
+    .mobile-nav a img {
+        width: 75px;
+    }
+
+    /* Right Side: Menu Icon */
+    #displayed a.icon {
+        font-size: 2rem;
+    }
+
+    /* Hide Links */
+    .mobile-nav #mobile-links {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    /* Display Links */
+    .mobile-nav #mobile-links.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    /* Menu Links Style Rules */
+    #mobile-links a {
+        padding: 14px 16px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        display: block;
+    }
+}
+
+/* TABLET & DESKTOP VIEWPORT STYLE RULES */
+@media (min-width: 768px) {
+    /* HIDE MOBILE NAV */
+    .mobile-nav {
+        display: none;
+    }
+
+    /* NAV STYLE RULES */
+    .tab-desk-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Left Side: Logo */
+    .tab-desk-nav a img {
+        width: 100px;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Right Side: Links */
+    #tab-desk-links a {
+        margin-left: 30px;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}
+
+/* GLOBAL ANIMATIONS */
+.content {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+  
+.content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+  

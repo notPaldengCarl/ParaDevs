@@ -1,0 +1,265 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* dogs bg */
+.shelterbg {
+    width: 90%;
+    height: 80vh;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    border-radius: 30px;
+}
+
+
+/* Purple Banner Section */
+.purple-banner {
+    background-color: #956EA6; 
+    color: #1e1e1e;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 25px;
+    font-family: Arial, sans-serif;
+   
+}
+
+.purple-banner h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.color-text{
+    color: #FFFFF0;
+}
+
+.shelter_heading{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+/* SHELTER */
+.shelter-container {
+    width: 100%;
+    padding: 50px 5%;
+}
+
+.shelter-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.bff-section {
+    width: 100%; 
+    background-color: #956EA6; 
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center; 
+}
+
+#shelter-color{
+    color:#FFFFF0;
+}
+
+.bff-section .shelter-content {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center; 
+}
+
+.bff-section .shelter-info h2,
+.bff-section .shelter-info p {
+    color: #FFFFF0; 
+}
+
+/* Logo*/
+.logo_shelter {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shelter-info {
+    flex: 1;
+    text-align: left;
+}
+
+.shelter-info h2 {
+    font-size: 2.5rem;
+    color: #1e1e1e; 
+    margin-bottom: 15px;
+}
+
+.shelter-info p {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    line-height: 1.6;
+}
+/* end shelter */
+
+
+
+
+/* contact */
+.contact-section {
+    position: relative;
+    color: white;
+}
+
+/* Background Image */
+.contact-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-text {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    transform: translateY(-50%);
+   text-align: left;
+}
+
+.contact-color {
+    color: #1e1e1e;
+}
+
+.contact-text h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.contact-text h2 {
+    font-size:3rem;
+    margin: 10px 0;
+}
+
+.contact-text p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.contact-text a {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* btns */
+.visit-btn, .white-visit-btn, .contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+    background-color: transparent; 
+    border: 2px solid #1e1e1e; 
+    border-radius: 25px; 
+    text-decoration: none;
+   
+  }
+
+  .white-visit-btn{
+    color: #FFFFF0;
+    border: 2px solid #FFFFF0;
+  }
+  
+
+
+
+  /* Responsive Styling */
+@media (max-width: 768px) {
+    
+    .hero {
+        display: none;
+    }
+
+    .contact-section {  
+        background-color: #956EA6;
+    }
+    .contactbg {
+        display: none !important;
+    }
+
+    .logo_shelter {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* shelter content verti/col */
+    .shelter-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .bff-section .shelter-content {
+        flex-direction: column-reverse;
+    }
+
+
+    .bff-section .shelter-content {
+        flex-direction: column;
+    }
+    
+
+    .shelter-info h2 {
+        font-size: 2rem;
+    }
+
+    .shelter-info p {
+        font-size: 1rem;
+        
+    }
+
+    .purple-banner h2 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .contact-text {
+        position: relative;
+        text-align: center;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 20px;
+    }
+
+    .contact-text h1 {
+        font-size: 3rem;
+    }
+
+    .contact-text h2 {
+        font-size: 2rem;
+    }
+
+    .contact-text p {
+        font-size: 1.2rem;
+    }
+
+    .visit-btn, .white-visit-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        width: fit-content; /* length of the btn */
+    }
+
+}

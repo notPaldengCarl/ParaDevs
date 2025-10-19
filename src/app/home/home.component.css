@@ -1,0 +1,218 @@
+/* GLOBAL STYLE RULES */
+/* ALL TEXT STYLE RULES */
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* ALL LINK STYLE RULES */
+.mobile-hero a, .hero-text a, .wwa-text a, .shelters-pampanga a, .mobile-cta a, .cta-text a {
+    border: solid 2px var(--white);
+    border-radius: 20px;
+    padding: 15px;
+    color: var(--white);
+}
+
+/* BELOW HERO TEXT STYLE RULES */
+.below-hero {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.below-hero span {
+    color: var(--purple);
+}
+
+/* WHO WE ARE STYLE RULES */
+.who-we-are {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.who-we-are h2 {
+    text-align: center;
+}
+
+.wwa-content img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.wwa-text p {
+    margin: 20px 0;
+}
+
+.wwa-text div {
+    padding: 15px 0;
+}
+
+/* SHELTERS AROUND PAMPANGA STYLE RULES */
+.shelters-pampanga {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.shelters-pampanga a {
+    color: var(--black);
+}
+
+.shelter a {
+    display: block; 
+}
+
+.more-shelters a {
+    border-color: var(--black);
+}
+
+.shelter img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.shelter p {
+    padding-top: 10px;
+}
+
+/* BE THE CHANGE STYLE RULES */
+.mobile-cta, .tab-desk-cta {
+    margin-top: 50px;
+}
+
+/* MOBILE STYLE RULES */
+@media (max-width: 767px) {
+    /* HIDE TABLET/DESKTOP DIVS */
+    .tab-desk-hero, .tab-desk-cta {
+        display: none;
+    }
+
+    /* HERO/CTA STYLE RULES */
+    .mobile-hero, .mobile-cta {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: var(--purple);
+        color: var(--white);
+    }
+
+    .mobile-hero h1, .mobile-cta h2 {
+        color: var(--black);
+    }
+
+    .mobile-hero div, .mobile-cta div {
+        padding: 15px 0;
+    } 
+
+    /* WHO WE ARE STYLE RULES */
+    .wwa-text div {
+        text-align: center;
+    }
+}
+
+/* TABLET & DESKTOP STYLE RULES */
+@media (min-width: 768px) {
+    /* HIDE MOBILE DIVS */
+    .mobile-hero, .mobile-cta {
+        display: none;
+    }
+
+    /* HERO/CTA STYLE RULES */
+    .tab-desk-hero, .tab-desk-cta {
+        position: relative;
+    }
+
+    .tab-desk-hero img, .tab-desk-cta img {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .hero-text, .cta-text {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        width: 50%;
+        color: var(--white);
+    }
+
+    .hero-text h1, .cta-text h2 {
+        font-size: 3.5rem;
+        color: var(--black);
+    }
+
+    .hero-text div, .cta-text div {
+        padding: 15px 0;
+    }
+
+    /* WHO WE ARE STYLE RULES */
+    .who-we-are h2 {
+        margin-bottom: 20px;
+    }
+
+    .wwa-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .wwa-content img {
+        margin: auto 0;
+    }
+
+    .wwa-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* SHELTERS AROUND PAMPANGA STYLE RULES */
+    .all-shelters {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* DESKTOP STYLE RULES */
+@media (min-width: 1024px) {
+    /* HERO STYLE RULES */
+    .hero-text {
+        top: 8%;
+    }
+
+    /* BELOW HERO TEXT STYLE RULES */
+    .below-hero {
+        font-size: 1.5rem;
+    }
+
+    /* CTA STYLE RULES */
+    .cta-text {
+        top: 20%;
+    }
+}
+
+/* LARGE DESKTOP STYLE RULES */
+@media (min-width: 1440px) {
+    /* HERO/CTA STYLE RULES */
+    .hero-text, .cta-text {
+        top: 25%;
+    }
+    .hero-text h1, .cta-text h2 {
+        font-size: 4rem;
+    }
+
+    .hero-text h3, .cta-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p, .hero-text a, .cta-text p, .cta-text a {
+        font-size: 1.5rem;
+    }
+
+    /* BELOW HERO TEXT STYLE RULES */
+    .below-hero {
+        font-size: 2.5rem;
+    }
+
+    /* WHO WE ARE/SHETLERS AROUND PAMPANGA STYLE RULES */
+    .who-we-are p, .shelters-pampanga p {
+        font-size: 1.5rem;
+    }
+}
